@@ -3,7 +3,6 @@ import fs from 'fs/promises';
 
 const CHROME_PATH = process.env.CHROME_BIN;
 const SP_DC_COOKIES = process.env.SP_DC?.split(',') || [];
-console.log("sp", SP_DC_COOKIES);
 const tokenApiPattern = 'https://open.spotify.com/api/token';
 const accessTokens = [];
 
