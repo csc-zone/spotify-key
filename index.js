@@ -38,7 +38,7 @@ const getAccessToken = async (sp_dc_value) => {
             const token = data?.accessToken;
             if (token) {
               accessTokens.push(token);
-              console.log(`✅ Captured token`);
+              console.log(`✅ Captured token: ${token}`);
               tokenCaptured = true;
               resolve();
             }
